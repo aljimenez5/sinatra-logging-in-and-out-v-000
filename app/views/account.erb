@@ -10,7 +10,7 @@
       <p><h1> Welcome <%= Helpers.current_user(session).username %> </h1></p>
       
       <p><h2> <%= Helpers.current_user(session).balance.to_f %> </h2></p>
-      <a href="/logout"><h5>Log Out</h5></a>
+      <a href="/logout"><h3>Log Out</h3></a>
     <% else %>
       <h5>You Must <a href="/">Log In</a> to View Your Balance</h5>
     <% end %>

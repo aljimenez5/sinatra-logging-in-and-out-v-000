@@ -9,8 +9,9 @@ class ApplicationController < Sinatra::Base
   get '/' do
     if Helpers.is_logged_in?(session)
       redirect '/account'
-    erb :index
-    
+    else
+      erb :index
+    end
   end
 
   post '/login' do

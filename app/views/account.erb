@@ -10,6 +10,7 @@
       <h1> <%= Helpers.current_user(session).username %> </h1>
       <h2> <%= Helpers.current_user(session).balance %> </h2>
     <% else %>
+      You must <a href="/">Log In</a> to view this
     
     <a href="/logout">Log Out</a>
   </body>

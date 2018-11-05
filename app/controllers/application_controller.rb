@@ -25,7 +25,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    puts params
     erb :account
   end
 

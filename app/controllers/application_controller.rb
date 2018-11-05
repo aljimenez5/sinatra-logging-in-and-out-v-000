@@ -7,7 +7,9 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    if Helpers.is_logged_in?(session)
     erb :index
+    
   end
 
   post '/login' do
